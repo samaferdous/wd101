@@ -7,6 +7,9 @@
       rel="stylesheet"
     />
     <style>
+      body{
+        background-color: lightblue;
+      }
       .center {
         display: flex;
         justify-content: center;
@@ -14,7 +17,7 @@
         height: 100vh;
       }
       .form-container {
-        max-width: 700px;
+        max-width: 600px;
         margin: auto;
       }
       .form-container label {
@@ -27,7 +30,7 @@
       }
       .user-table th,
       .user-table td {
-        border: 1px solid #f2f2f2;
+        border: 2px solid #f2f2f2;
         padding: 8px;
         text-align: left;
       }
@@ -35,7 +38,7 @@
         background-color: #f2f2f2;
       }
       .input-field {
-        border: 1px solid #ddd;
+        border: 2px solid #ddd;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
     </style>
@@ -43,10 +46,10 @@
   <body class="bg-grey-100">
     <div class="center">
       <div class="form-container bg-white p-6 rounded-md shadow-md">
-        <h2 class="text-2xl font-bold mb-4">Registration Form</h2>
+        <h2 class="text-2xl font-bold mb-3">Registration Form</h2>
         <form id="registrationForm">
-          <div class="mb-4">
-            <label for="name" class="inline-block w-24">Name:</label>
+          <div class="mb-3">
+            <label for="name" class="inline-block w-26">Name:</label>
             <input
               type="text"
               id="name"
@@ -55,8 +58,8 @@
               required=""
             />
           </div>
-          <div class="mb-4">
-            <label for="email" class="inline-block w-24">Email:</label>
+          <div class="mb-3">
+            <label for="email" class="inline-block w-26">Email:</label>
             <input
               type="email"
               id="email"
@@ -65,8 +68,8 @@
               required=""
             />
           </div>
-          <div class="mb-4">
-            <label for="password" class="inline-block w-24">Password:</label>
+          <div class="mb-3">
+            <label for="password" class="inline-block w-26">Password:</label>
             <input
               type="password"
               id="password"
@@ -75,8 +78,8 @@
               required=""
             />
           </div>
-          <div class="mb-4">
-            <label for="dob" class="inline-block w-24">Date of Birth:</label>
+          <div class="mb-3">
+            <label for="dob" class="inline-block w-26">Date of Birth:</label>
             <input
               type="date"
               id="dob"
@@ -88,7 +91,7 @@
             />
             <span id="dobError" class="error-msg"></span>
           </div>
-          <div class="mb-4">
+          <div class="mb-3">
             <label for="terms" class="inline-block w-24"
               >Accept Terms &amp; Conditions:</label
             >
@@ -102,7 +105,7 @@
           </div>
           <button
             type="submit"
-            class="bg-green-500 text-white px-4 py-2 rounded-md"
+            class="bg-blue-500 text-white px-5 py-2 rounded-md"
           >
             Submit
           </button>
