@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let currentDate = new Date();
   let minDate = new Date(currentDate);
-  minDate.setFullYear(minDate.getFullYear() - 55); // Min date (55 years ago)
+  minDate.setFullYear(minDate.getFullYear() - 55); 
   let maxDate = new Date(currentDate);
-  maxDate.setFullYear(maxDate.getFullYear() - 18); // Max date (18 years ago)
+  maxDate.setFullYear(maxDate.getFullYear() - 18);
 
   let dobInput = document.getElementById('dob');
   dobInput.setAttribute('max', maxDate.toISOString().split('T')[0]); // Set max date
